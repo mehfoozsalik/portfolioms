@@ -26,7 +26,6 @@ const experiencesData = [
 ];
 
 function Experiences({ resumeData }) {
-  console.log(resumeData);
   return (
     <div className="timeline">
       {resumeData?.education?.map((education) => (

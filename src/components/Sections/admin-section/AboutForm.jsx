@@ -25,7 +25,7 @@ function AboutForm({ aboutData }) {
   useEffect(() => {
     const uploadFile = () => {
       const name = new Date().getTime() + resume.name;
-      console.log(name);
+
       const storageRef = ref(storage, resume.name);
       const uploadTask = uploadBytesResumable(storageRef, resume);
       uploadTask.on(
@@ -61,7 +61,6 @@ function AboutForm({ aboutData }) {
   useEffect(() => {
     const uploadFile = () => {
       const name = new Date().getTime() + file.name;
-      console.log(name);
       const storageRef = ref(storage, file.name);
       const uploadTask = uploadBytesResumable(storageRef, file);
       uploadTask.on(
@@ -94,7 +93,6 @@ function AboutForm({ aboutData }) {
     };
     file && uploadFile();
   }, [file]);
-  console.log(formdata);
   const submitHandler = async (event) => {
     event.preventDefault();
     if (!formdata.image) {

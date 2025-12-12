@@ -31,7 +31,7 @@ function WorkForm({ workData }) {
       setMessage("Your message has been sent!!!");
     }
   };
-  console.log(work);
+
   const handleAlerts = () => {
     if (error && message) {
       return <div className="alert alert-danger mt-4">{message}</div>;

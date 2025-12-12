@@ -6,15 +6,7 @@ import "./App.scss";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Multipage from "./pages/Multipage";
 
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Resume from "./pages/Resume";
-import Works from "./pages/Works";
-import Contact from "./pages/Contact";
-
-import Demopage from "./pages/Demopage";
 import WorkDetails from "./pages/WorkDetails";
 import WorkDetails2 from "./pages/WorkDetails2";
 import AdminLoginPage from "./pages/admin/AdminLoginPage";
@@ -57,7 +49,6 @@ function App() {
   const [resumeData] = data?.filter((d) => d.id === "resume");
   const [workData] = data?.filter((d) => d.id === "work");
 
-  console.log(workData);
   const RequreAuth = ({ children }) => {
     return currentUser ? children : <Navigate to="/admin" />;
   };

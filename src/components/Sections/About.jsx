@@ -43,7 +43,7 @@ function About({ aboutData }) {
         <a
           target="_blank"
           href="mailto:mehfooz.salik@gmail.com"
-          className="btn btn-alt mt-md-0 mt-xs-2"
+          className="btn btn-alt mt-md-0 mt-xs-2 mt-2 lg:mt-0"
         >
           <i className="icon-envelope"></i>Hire me
         </a>
